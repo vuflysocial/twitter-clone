@@ -55,7 +55,7 @@ const Sidebar = (): JSX.Element => {
               alert={item.alert}
               auth={item.auth}
               href={item.href}
-              icon={item.icon}
+              
               label={item.label}
             />
           ))}
@@ -70,4 +70,6 @@ const Sidebar = (): JSX.Element => {
 };
 
 export default Sidebar;
+
+
 
