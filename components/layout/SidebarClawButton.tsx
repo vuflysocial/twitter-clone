@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import useLoginModal from "@/hooks/useLoginModal";
 import useCurrentUser from "@/hooks/useCurrentUser";
 
-const SidebarTweetButton = () => {
+const SidebarClawButton = () => {
   const router = useRouter();
   const loginModal = useLoginModal();
   const { data: currentUser } = useCurrentUser();
@@ -30,8 +30,8 @@ const SidebarTweetButton = () => {
         flex
         items-center
         justify-center 
-        bg-sky-500 
-        hover:bg-opacity-80 
+        bg-green-500 
+        hover:bg-green-400 
         transition 
         cursor-pointer
       ">
@@ -44,8 +44,8 @@ const SidebarTweetButton = () => {
         px-4
         py-2
         rounded-full
-        bg-sky-500
-        hover:bg-opacity-90 
+        bg-green-500 
+        hover:bg-green-400 
         cursor-pointer
       ">
         <p 
@@ -57,11 +57,12 @@ const SidebarTweetButton = () => {
             text-white 
             text-[20px]
         ">
-          Tweet
+          Claw
         </p>
       </div>
     </div>
   );
 };
 
-export default SidebarTweetButton;
+export default SidebarClawButton;
+
